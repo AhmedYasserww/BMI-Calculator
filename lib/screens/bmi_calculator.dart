@@ -13,7 +13,7 @@ class BMICalculator extends StatelessWidget {
     return BlocProvider(
       create: (context) => CalculatorCubit(),
       child: Scaffold(
-        backgroundColor: const Color(0xFF272B49FF),
+        backgroundColor:  const Color(0xff272B49FF),
         appBar: AppBar(
           centerTitle: true,
           automaticallyImplyLeading: false,
@@ -232,7 +232,7 @@ class BMICalculator extends StatelessWidget {
                           bmi = BlocProvider.of<CalculatorCubit>(context).calcBmi();
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => Result(bmi: bmi),
+                              builder: (context) => ResultView(bmi: bmi),
                             ),
                           );
                         },

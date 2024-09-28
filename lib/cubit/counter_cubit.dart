@@ -21,7 +21,9 @@ class CalculatorCubit extends Cubit<CalculatorState>{
     emit(WeightIncrementState());
   }
   void decrementWeight(){
-    weight--;
+    if(weight>0) {
+      weight--;
+    }
     emit(WeightDecrementState());
   }
   void incrementAge(){
@@ -29,7 +31,9 @@ class CalculatorCubit extends Cubit<CalculatorState>{
     emit(AgeIncrementState());
   }
   void decrementAge(){
-    age --;
+    if(age >0) {
+      age --;
+    }
     emit(AgeDecrementState());
   }
   void updateHeight(double newHeight) {
