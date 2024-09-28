@@ -18,16 +18,19 @@ class OnBoardingView extends StatelessWidget {
           children: [
             const Image(image: AssetImage(Assets.imagesLogo2)),
             const SizedBox(height: 20),
-            const Text(
-              "Welcome to BMI Cal+",
-              style: TextStyle(fontSize: 28, fontWeight: FontWeight.w600),
+            const FittedBox(
+              fit: BoxFit.scaleDown,
+              child:  Text(
+                "Welcome to BMI Cal+",
+                style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
+              ),
             ),
             const SizedBox(height: 16),
             const Text(
               "Best guide for calculating\nyour body mass index.",
               style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w300,
+                fontSize: 16,
+                fontWeight: FontWeight.w200,
               ),
               textAlign: TextAlign.center,
             ),

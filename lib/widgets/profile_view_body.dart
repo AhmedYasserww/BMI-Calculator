@@ -62,8 +62,8 @@ class _ProfileViewBodyState extends State<ProfileViewBody> {
               fontWeight: FontWeight.bold,
             ),
           ),
-          const SizedBox(height: 5),
-          const SizedBox(height: 20),
+
+          const SizedBox(height: 25),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24),
             child: ProfileInfoRow(
@@ -106,7 +106,7 @@ class _ProfileViewBodyState extends State<ProfileViewBody> {
               },
             ),
           ),
-          const SizedBox(height: 30),
+          const SizedBox(height: 12),
           ElevatedButton(
             onPressed: () {
               GoRouter.of(context).push(AppRouter.kLogin);

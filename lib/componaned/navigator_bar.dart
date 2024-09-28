@@ -15,7 +15,7 @@ class HomeView extends StatefulWidget {
 class HomeViewState extends State<HomeView> {
 
   List<Widget>widgetPages=[
-    Calculate(),
+    BMICalculator(),
     Calculator(),
     const ProfileView()
 

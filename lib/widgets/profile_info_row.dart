@@ -17,13 +17,17 @@ class ProfileInfoRow extends StatelessWidget {
       children: [
         Icon(icon, color: Colors.grey),
         const SizedBox(width: 15),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(label, style: const TextStyle(color: Colors.grey)),
-            const SizedBox(height: 5),
-            Text(value, style: const TextStyle(fontSize: 16)),
-          ],
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(label, style: const TextStyle(color: Colors.grey)),
+              const SizedBox(height: 5),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                  child: Text(value, style: const TextStyle(fontSize: 16))),
+            ],
+          ),
         ),
       ],
     );
