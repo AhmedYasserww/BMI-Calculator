@@ -1,1 +1,1 @@
-# BMI-Calculator
+This BMI Calculator App, calculates Body Mass Index (BMI) based on user inputs and includes a basic calculator for arithmetic operations. It features Firebase authentication for secure registration, allowing users to track their
